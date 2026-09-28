@@ -33,6 +33,18 @@ export const bedrockProvider: RegistryEntry = {
       unsupportedParams: ["temperature", "top_p", "top_k"],
     },
     {
+      id: "anthropic.claude-sonnet-5-5",
+      name: "Claude Sonnet 5.5 (Bedrock)",
+      toolCalling: true,
+      supportsReasoning: true,
+      supportedThinkingEfforts: ["low", "medium", "high", "xhigh", "max"],
+      supportsXHighEffort: true,
+      supportsVision: true,
+      contextLength: 1000000,
+      maxOutputTokens: 128000,
+      unsupportedParams: ["temperature", "top_p", "top_k"],
+    },
+    {
       id: "anthropic.claude-sonnet-4-6",
       name: "Claude Sonnet 4.6 (Bedrock)",
       toolCalling: true,

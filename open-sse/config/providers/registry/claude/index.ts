@@ -120,6 +120,18 @@ export const claudeProvider: RegistryEntry = {
       // reasoning steered by output_config.effort). Mirrors the Opus/Fable entries.
       unsupportedParams: ["temperature", "top_p", "top_k"],
     },
+    // Listed after Sonnet 5 so the cc/ Sonnet default stays on a model stale live catalogs still accept (#14612).
+    {
+      id: "claude-sonnet-5-5",
+      name: "Claude Sonnet 5.5",
+      contextLength: 1000000,
+      maxOutputTokens: 128000,
+      supportsReasoning: true,
+      supportedThinkingEfforts: ["low", "medium", "high", "xhigh", "max"],
+      supportsXHighEffort: true,
+      supportsVision: true,
+      unsupportedParams: ["temperature", "top_p", "top_k"],
+    },
     {
       id: "claude-sonnet-4-6",
       name: "Claude Sonnet 4.6",

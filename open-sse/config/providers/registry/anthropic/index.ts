@@ -90,6 +90,17 @@ export const anthropicProvider: RegistryEntry = {
       supportedThinkingEfforts: ["low", "medium", "high"],
     },
     {
+      id: "claude-sonnet-5-5",
+      name: "Claude Sonnet 5.5",
+      contextLength: 1000000,
+      maxOutputTokens: 128000,
+      supportsReasoning: true,
+      supportedThinkingEfforts: ["low", "medium", "high", "xhigh", "max"],
+      supportsXHighEffort: true,
+      supportsVision: true,
+      unsupportedParams: ["temperature", "top_p", "top_k"],
+    },
+    {
       id: "claude-sonnet-5",
       name: "Claude Sonnet 5",
       contextLength: 1048576,
